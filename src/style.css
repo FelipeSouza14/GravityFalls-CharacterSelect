@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    /* background-image: linear-gradient(43deg, #4158d0 0%, #c450c0 46%, #ffcc70 100%); */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./imagens/estatua-bill.jpg");
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o overlay atrás do conteúdo */
+    background: linear-gradient(-230deg, #000 40%, rgba(0, 0, 0, 0.5) 65%) no-repeat;
+    /*O rgba mexe no efeito escuro da tela*/
+  }
+  
+  .conteudo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./imagens/fundo-papiro-7.jpg");
+    align-items: center;
+    border-radius: 2%;
+  }
+  
+  .conteudo .logo{
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+  }
+  
+  .conteudo .descricao{
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+    
+  }
+  
+  .conteudo .nome-personagem{
+    color: brown;
+    font-size: 48px;
+  }
+  
+  .circle {
+    position: absolute;
+    left: 20%;
+    width: 650px;
+    height: 650px;
+    /*rgba(255, 255, 255, 0.8) cor que tava antes*/
+    border-radius: 50%;
+    border: 4px solid white;
+    position: relative;
+    box-shadow: 0 0 2px white, 0 0 8px white, 0 0 15px white inset;
+    /* background-image: linear-gradient(43deg, #1c130c 0%, #4f351f 46%, #9b6940 100%); */
+    /* background-image: linear-gradient(43deg, #0c0805 0%, #6a4628 46%, #da9258 100%); */
+  }
+  
+  .circle .botao {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+  }
+  
+  /*Cor que eu talvez use no NEON rgb(0, 229, 255)*/
+  /* Coordenadas para os botões na borda do círculo */
+  .circle .botao.soos {
+    transform: rotate(30deg);
+    top: 4%;
+    left: 30%;
+  }
+  
+  .circle .botao.wendy {
+    transform: rotate(60deg);
+    top: 4%;
+    right: 30%;
+  }
+  
+  .circle .botao.stan {
+    transform: rotate(90deg);
+    top: 20%;
+    left: 80%;
+  }
+  
+  .circle .botao.dipper {
+    transform: rotate(120deg);
+    top: 45%;
+    left: 88%;
+  }
+  
+  .circle .botao.gideon {
+    transform: rotate(150deg);
+    top: 70%;
+    left: 80%;
+  }
+  
+  .circle .botao.ford {
+    transform: rotate(180deg);
+    top: 86%;
+    left: 60%;
+  }
+  
+  .circle .botao.pacifica {
+    transform: rotate(210deg);
+    top: 86%;
+    right: 60%;
+  }
+  
+  .circle .botao.mabel {
+    transform: rotate(240deg);
+    top: 70%;
+    right: 80%;
+  }
+  
+  .circle .botao.robbie {
+    transform: rotate(270deg);
+    top: 45%;
+    right: 88%;
+  }
+  
+  .circle .botao.mcguget {
+    transform: rotate(300deg);
+    top: 20%;
+    right: 80%;
+  }
+  
+  .circle .botao img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .botao:hover img{
+    filter: brightness(0.8);
+  }
+  
+  .circle .secondCircle{
+    position: absolute;
+    top: 13.5%;
+    left: 13%;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px white, 0 0 8px white, 0 0 15px white inset;
+    
+  }
+  
+  .circle .secondCircle img{
+    width: 100%;
+    height: 100%;;
+  }
+  
+  
